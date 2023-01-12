@@ -32,5 +32,10 @@ if guess not in word:
     print(stages[lives])
 
     if lives == 0:
-        correct = True
+        end_of_game = True
         print("You lose!")
+print(f" You have {lives} lives remaining")
+print(display)
+if "_" not in display:
+    end_of_game = True
+    print("you win!!")
