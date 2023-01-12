@@ -28,5 +28,9 @@ for num in range(len(word)):
             display[num] = guess
 # if the guess is incorrect remove a life
 if guess not in word:
-        lives -= 1
-        print(stages[lives])
+    lives -= 1
+    print(stages[lives])
+
+    if lives == 0:
+        correct = True
+        print("You lose!")
