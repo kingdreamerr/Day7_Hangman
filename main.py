@@ -20,3 +20,13 @@ for dash in display:
 
 # get the user's guess
 guess = input("\n\nPlease guess a letter: ").lower()
+
+# if the guess is correct replace the _ in diplay with the guessed letter
+
+for num in range(len(word)):
+        if word[num] == guess:
+            display[num] = guess
+# if the guess is incorrect remove a life
+if guess not in word:
+        lives -= 1
+        print(stages[lives])
