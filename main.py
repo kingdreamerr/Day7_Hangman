@@ -33,7 +33,7 @@ while not end_of_game:
     # if the guess is incorrect remove a life
     if guess not in word:
         lives -= 1
-        print("You ussed wrongly you lose a life")
+        print("You guessed wrongly you lose a life")
         print(stages[lives])
 
         if lives == 0:
